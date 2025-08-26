@@ -1,39 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
-# If you change this file, please restart the server process.
-
-# Site settings
-# are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
+# === Theme ===
+# 원격 테마 사용 (리포 안에 테마 소스가 없다면 유지)
 remote_theme: raviriley/agency-jekyll-theme
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+# === Site URL (프로젝트 페이지 기준) ===
+# 깃허브 계정: minfy0-0 / 리포: minfy0-0-custom.github.io
+url: "https://minfy0-0.github.io"             # 계정 루트
+baseurl: "/minfy0-0-custom.github.io"         # 이 리포 경로 (앞에 / 필수!)
 
-title      : Your Awesome Website
-email      : your-email@example.com #this is also the email contact forms will go to
-description: "Site description"
-author     : Your Name
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+# === Branding ===
+title: Minseo Kim's Portfolio
+email: minseo03070294@gmail.com                      # 연락 받을 이메일
+description: "AI & Cloud Developer | Bridging Bioinformatics, Business, and Creative Innovation"
+author: Minseo Kim
+# logo:
+#   path: /assets/img/og.png                   # OG/파비콘 이미지 쓰면 경로 지정
+#   height: 60
 
-locale: "en-US" # See available languages in _data/sitetext.yml
+# === Locale (한국어 UI 쓰려면 ko-KR) ===
+locale: "ko"                               # _data/sitetext.yml의 ko 블록과 매칭
 
+# === Analytics (원하면 나중에 넣기)
 analytics:
-  google: #Google Analytics tracking code here
+  google:   G-NHHT43834D                      # ex) G-XXXXXX
 
+# === Collections ===
 collections:
   portfolio:
 
 markdown: kramdown
 
-# Uncomment following line to use Formspree form ID based URL instead of email based URL
-# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
-# formspree_form_path: "f/a_form_id"
+# === Plugins (SEO/Sitemap 권장) ===
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# === Contact Form (스팸 방지용 Formspree 쓰려면 주석 해제해서 ID 넣기)
+# formspree_form_path: "f/당신의폼ID"
