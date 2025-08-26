@@ -96,7 +96,8 @@ experience:
         - "SageMaker 기반 모델 학습 및 배포 실습"
         - "Lambda, API Gateway, CloudFront를 활용한 AI App 구축"
       image: assets/img/timeline/2.jpg
-    end: "계속 성장 중!"
+
+  end: "계속 성장 중!"   
 
   portfolio:
     title: "Projects"
