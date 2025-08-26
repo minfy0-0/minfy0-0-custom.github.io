@@ -3,7 +3,7 @@
 remote_theme: raviriley/agency-jekyll-theme
 
 # === Site URL (프로젝트 페이지 기준) ===
-# 깃허브 계정: minfy0-0 / 리포: minfy0-0-custom.github.io
+# 깃허브 계정: minfy0-0 / 리포: minfy0-0.github.io
 url: "https://minfy0-0.github.io"
 baseurl: ""    # 반드시 빈 문자열로!       
 # === Branding ===

@@ -11,10 +11,10 @@ ko: &DEFAULT_KO
   nav:
     - title: "About Me"
       section: about
-    - title: "Skills"
-      section: skills
-    - title: "Experience"
-      section: experience
+    - title: "Skills"        # services 섹션을 Skills처럼 표시
+      section: services
+    - title: "Experience"    # timeline 섹션을 Experience처럼 표시
+      section: timeline
     - title: "Projects"
       section: portfolio
     - title: "Contact"
@@ -25,6 +25,47 @@ ko: &DEFAULT_KO
     text: "Nice to meet you! 🙌"
     button: "Learn More"
     buttonlink: "#about"
+
+  # Skills → services 로 매핑
+  services:
+    title: "Skills"
+    text: "기술과 도구 | Skills & Tools"
+    section: services
+    list:
+      - title: "AI / Machine Learning"
+        desc: "PyTorch, TensorFlow · CNN/YOLO/ResNet/DenseNet/VGG · RAG · 정규화/튜닝/전이학습"
+        icon: fas fa-brain
+      - title: "Cloud & DevOps"
+        desc: "AWS(SageMaker/Lambda/EC2/S3/Redshift/CloudFront) · CI/CD · Docker/K8s · API Gateway/Cognito"
+        icon: fas fa-cloud
+      - title: "Programming & Development"
+        desc: "Python(Advanced), SQL · Streamlit/FastAPI · Git & GitHub · 자료구조/알고리즘"
+        icon: fas fa-code
+      - title: "Data Science & Bioinformatics"
+        desc: "Pandas/NumPy · Matplotlib/Seaborn · BioPython · 통계분석/가설검정"
+        icon: fas fa-dna
+
+  portfolio:
+    title: "Projects"
+    text: "내 프로젝트 모음"
+    section: portfolio
+    closebutton: "닫기"
+
+  # Experience → timeline 으로 매핑
+  timeline:
+    title: "Experience / Education / Training"
+    text: "내 학력과 경험"
+    section: timeline
+    events:
+      - title: "대학교"
+        year: "2022 ~ 현재"
+        desc: "생명공학·경영학 전공 · 유전체 데이터 분석 및 Bioinformatics 연구 · 딥러닝(CNN/ResNet) 실습"
+        image: assets/img/timeline/1.jpg
+      - title: "AWS Training"
+        year: "2025"
+        desc: "AWS Cloud Practitioner 학습 · SageMaker 모델 학습/배포 · Lambda, API Gateway, CloudFront로 AI App 구축"
+        image: assets/img/timeline/2.jpg
+    end: "계속 성장 중!"
 
   about:
     title: "About Me"
@@ -37,74 +78,13 @@ ko: &DEFAULT_KO
       I enjoy exploring diverse domains, taking on new challenges, and approaching technology with a business-oriented perspective.
     section: about
 
-  skills:   # ✅ ko 블록 안으로 이동
-    title: "Skills"
-    text: "기술과 도구 | Skills & Tools"
-    section: skills
-    categories:
-      - name: "AI / Machine Learning"
-        items:
-          - "Deep Learning (PyTorch, TensorFlow)"
-          - "Computer Vision (CNN, YOLO, ResNet, DenseNet, VGG)"
-          - "NLP & RAG (Retrieval-Augmented Generation)"
-          - "Model Optimization (Regularization, Hyperparameter Tuning, Transfer Learning)"
+  clients:
+    section: clients
+    list: []   # 필요 없으면 빈 리스트
 
-      - name: "Cloud & DevOps"
-        items:
-          - "AWS (SageMaker, Lambda, EC2, S3, Redshift, CloudFront)"
-          - "MLOps Pipelines (CI/CD, Model Deployment)"
-          - "Docker & Kubernetes"
-          - "API Development & Integration (API Gateway, Cognito)"
-
-      - name: "Programming & Development"
-        items:
-          - "Python (Advanced), SQL"
-          - "Streamlit & FastAPI (AI App Development)"
-          - "Git & GitHub (Version Control, Collaboration)"
-          - "Data Structures & Algorithms"
-
-      - name: "Data Science & Bioinformatics"
-        items:
-          - "Data Preprocessing & EDA (Pandas, NumPy)"
-          - "Visualization (Matplotlib, Seaborn, Power BI)"
-          - "Genomic Data Analysis (BioPython)"
-          - "Statistical Analysis & Hypothesis Testing"
-
-  experience:   # ✅ 이것도 ko 블록 안으로
-    title: "Experience / Education / Training"
-    text: "내 학력과 경험"
-    section: experience
-    events:
-      - title: "대학교"
-        year: "2022 ~ 현재"
-        role: "학생 (생명공학 · 경영학 전공)"
-        desc: "머신러닝/딥러닝 기반 프로젝트 수행"
-        details:
-          - "유전체 데이터 분석 및 Bioinformatics 연구 참여"
-          - "경영학 프로젝트에서 데이터 기반 의사결정 경험"
-          - "딥러닝 모델(CNN, ResNet) 적용한 연구 실습"
-        awards:
-          - "교내 AI 경진대회 우수상"
-        image: assets/img/timeline/1.jpg
-
-      - title: "AWS Training"
-        year: "2024"
-        role: "클라우드 실습 참여자"
-        desc: "AWS Cloud & AI 서비스 학습"
-        details:
-          - "AWS Cloud Practitioner 자격 학습"
-          - "SageMaker 기반 모델 학습 및 배포 실습"
-          - "Lambda, API Gateway, CloudFront를 활용한 AI App 구축"
-        image: assets/img/timeline/2.jpg
-
-    end: "계속 성장 중!"
-
-
-  portfolio:
-    title: "Projects"
-    text: "내 프로젝트 모음"
-    section: portfolio
-    closebutton: "닫기"
+  team:
+    section: team
+    people: [] # 필요 없으면 빈 리스트
 
   contact:
     title: "Contact"
@@ -130,6 +110,7 @@ ko: &DEFAULT_KO
         icon: "fab fa-linkedin-in"
       - url: https://instagram.com
         icon: "fab fa-instagram"
+
 
 
 # # English [default] (https://localizely.com/language-code/en/)
