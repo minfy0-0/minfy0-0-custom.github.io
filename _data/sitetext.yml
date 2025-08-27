@@ -53,9 +53,10 @@ ko: &DEFAULT_KO
 
   # Experience → timeline 으로 매핑
   timeline:
+    section: "timeline"
     title: "Experience / Education / Training"
     text: "내 학력과 경험"
-    section: timeline
+    start_align: "left"
     events:
       - title: "대학교"
         year: "2022 ~ 현재"
