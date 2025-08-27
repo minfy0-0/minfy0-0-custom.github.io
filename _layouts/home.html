@@ -1,12 +1,16 @@
 ---
 layout: default
+title: Home
+permalink: /
 ---
-{% include navheader.html %}
 
-{% include services.html %}
-{% include portfolio_grid.html %}
+{% include header.html %}
+
+{# 원하는 섹션 순서대로 배치 #}
 {% include about.html %}
+{% include services.html %}
+{% include portfolio.html %}
 {% include timeline.html %}
-<!-- {% include team.html %}
-{% include clients.html %} -->
 {% include contact.html %}
+
+{% include footer.html %}

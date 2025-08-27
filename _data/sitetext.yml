@@ -106,11 +106,8 @@ ko: &DEFAULT_KO
     social:
       - url: https://github.com/minfy0-0-custom
         icon: "fab fa-github"
-      - url: https://linkedin.com
+      - url: https://www.linkedin.com/in/%EB%AF%BC%EC%84%9C-%EA%B9%80-81625235a/
         icon: "fab fa-linkedin-in"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
-
 
 
 # # English [default] (https://localizely.com/language-code/en/)

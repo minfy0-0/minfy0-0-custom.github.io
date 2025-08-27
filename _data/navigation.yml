@@ -11,11 +11,11 @@ ko: &DEFAULT_KO
   nav:
     - title: "About Me"
       section: about
-    - title: "Skills"
-      section: skills
-    - title: "Experience"
-      section: experience
+    - title: "Skills & Tools"
+      section: services
     - title: "Projects"
       section: portfolio
+    - title: "Experience / Education / Training"
+      section: timeline
     - title: "Contact"
       section: contact
