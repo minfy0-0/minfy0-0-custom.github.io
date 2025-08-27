@@ -7,7 +7,7 @@
 # How to use:
 # {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
-ko: &DEFAULT_KO
+ko:
   nav:
     - title: "About Me"
       section: about
@@ -19,3 +19,4 @@ ko: &DEFAULT_KO
       section: timeline
     - title: "Contact"
       section: contact
+
